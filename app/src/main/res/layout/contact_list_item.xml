@@ -3,50 +3,61 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="400dp"
+        android:id="@+id/cvcontact"
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/tvNameLbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="60dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintStart_toEndOf="@+id/ivcontacts"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="name" />
+            tools:text="Rahma" />
 
         <TextView
             android:id="@+id/tvphonenumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="88dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toEndOf="@+id/ivcontacts"
             app:layout_constraintTop_toBottomOf="@+id/tvNameLbl"
-            tools:text="phonenumber" />
+            tools:text="0729869150" />
 
         <TextView
             android:id="@+id/tvEmailLbl"
             android:layout_width="102dp"
             android:layout_height="17dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="504dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/ivcontacts"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="rahmafaiz@gmail.com" />
+
+        <ImageView
+            android:id="@+id/ivcontacts"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:text="Email"/>
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
